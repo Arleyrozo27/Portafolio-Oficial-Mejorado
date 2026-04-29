@@ -85,11 +85,11 @@ Me apasiona aprender nuevas tecnologías y construir proyectos que generen impac
 
 📬 Contacto
 
-Email: (arleyrodriguez280@gmail.com)
+Email: arleyrodriguez280@gmail.com
 
-LinkedIn: (https://www.linkedin.com/in/estudiante-backen-arley-rozo/)
+LinkedIn: https://www.linkedin.com/in/estudiante-backen-arley-rozo/
 
-GitHub: (https://github.com/Arleyrozo27)
+GitHub: https://github.com/Arleyrozo27
 
 ---
 
@@ -97,18 +97,6 @@ GitHub: (https://github.com/Arleyrozo27)
 
 Las contribuciones, sugerencias o mejoras son bienvenidas.
 
----
-
-📄 Licencia
-
-Este proyecto está bajo la licencia MIT.
-
----
-
-💡 Si quieres, en el siguiente mensaje puedo:
-- :contentReference[oaicite:0]{index=0}  
-- :contentReference[oaicite:1]{index=1}  
-- :contentReference[oaicite:2]{index=2}  
-- O :contentReference[oaicite:3]{index=3}  
-
 Solo dime 👍
+
+---
