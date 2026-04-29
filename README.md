@@ -41,11 +41,17 @@ Este proyecto muestra mis habilidades, proyectos y experiencia en desarrollo web
 ---
 
 📁 Portafolio-Oficial-Mejorado
+
 ├── index.html
+
 ├── styles.css
+
 ├── script.js
+
 ├── assets/
+
 │ ├── images/
+
 │ └── icons/
 
 
@@ -68,10 +74,14 @@ index.html
 
 <img width="1303" height="608" alt="image" src="https://github.com/user-attachments/assets/12a88825-a9f9-4cb7-95ad-a563baf30800" />
 
+---
+
 👨‍💻 Sobre mí
 
 Soy desarrollador de software enfocado en la creación de interfaces modernas y experiencias interactivas.
 Me apasiona aprender nuevas tecnologías y construir proyectos que generen impacto.
+
+---
 
 📬 Contacto
 
@@ -81,9 +91,13 @@ LinkedIn: (https://www.linkedin.com/in/estudiante-backen-arley-rozo/)
 
 GitHub: (https://github.com/Arleyrozo27)
 
+---
+
 ⭐ Contribuciones
 
 Las contribuciones, sugerencias o mejoras son bienvenidas.
+
+---
 
 📄 Licencia
 
