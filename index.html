@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio de Arley Rozo - Desarrollador Web. Soluciones digitales modernas, responsivas y de alta calidad." />
+  <link rel="icon" type="image/png" href="/images/logo.png" />
+  <link rel="apple-touch-icon" href="/images/logo.png" />
+  <title>Arley Rozo · Desarrollador Web</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Pantalla de carga -->
+  <div class="loader" id="loader">
+    <div class="loader-logo">
+      <img src="/images/logo.png" alt="Arley Rozo" />
+    </div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+
+  <!-- Cursor personalizado -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Barra de progreso de scroll -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Textura de ruido -->
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo">
+        <span class="logo-mark"><img src="/images/logo.png" alt="AR" /></span>
+        <span class="logo-text">Arley<span class="dot">.</span>Rozo</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#inicio" class="nav-link active">Inicio</a>
+        <a href="#sobre-mi" class="nav-link">Sobre mí</a>
+        <a href="#proyectos" class="nav-link">Proyectos</a>
+        <a href="#habilidades" class="nav-link">Habilidades</a>
+        <a href="#experiencia" class="nav-link">Experiencia</a>
+        <a href="#contacto" class="nav-link nav-cta">Contacto</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg" id="heroBg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Iconos flotantes decorativos -->
+    <div class="floating-icons" aria-hidden="true">
+      <i class="fa-brands fa-html5 f-ico" style="--x:8%;--y:22%;--d:0s;"></i>
+      <i class="fa-brands fa-css3-alt f-ico" style="--x:14%;--y:70%;--d:1.4s;"></i>
+      <i class="fa-brands fa-js f-ico" style="--x:88%;--y:18%;--d:2.1s;"></i>
+      <i class="fa-brands fa-python f-ico" style="--x:92%;--y:62%;--d:0.7s;"></i>
+      <i class="fa-solid fa-database f-ico" style="--x:6%;--y:48%;--d:2.8s;"></i>
+      <i class="fa-brands fa-java f-ico" style="--x:84%;--y:80%;--d:3.5s;"></i>
+    </div>
+
+    <div class="container hero-container">
+      <div class="hero-content">
+        <span class="eyebrow reveal" data-anim="fade-down">
+          <span class="status-dot"></span> Disponible para nuevos proyectos
+        </span>
+
+        <h1 class="hero-title reveal" data-anim="fade-up">
+          Hola, soy <span class="gradient-text gradient-shift">Arley Rozo</span><br />
+          <span class="hero-role">
+            <span id="typed">Desarrollador Web</span><span class="cursor">|</span>
+          </span>
+        </h1>
+
+        <p class="hero-desc reveal" data-anim="fade-up" data-delay="100">
+          Soy un desarrollador web apasionado, enfocado en crear soluciones digitales
+          modernas y responsivas. Busco oportunidades para aplicar mis habilidades y
+          entregar proyectos de alta calidad con una excelente experiencia de usuario.
+        </p>
+
+        <div class="hero-actions reveal" data-anim="fade-up" data-delay="200">
+          <a href="#proyectos" class="btn btn-primary magnetic">
+            <i class="fa-solid fa-rocket"></i> Ver proyectos
+          </a>
+          <a href="#contacto" class="btn btn-ghost magnetic">
+            <i class="fa-regular fa-envelope"></i> Contactarme
+          </a>
+        </div>
+
+        <div class="hero-stats reveal" data-anim="fade-up" data-delay="300">
+          <div class="stat">
+            <span class="stat-num" data-count="15">0</span><span class="plus">+</span>
+            <p>Proyectos</p>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-count="6">0</span><span class="plus">+</span>
+            <p>Tecnologías</p>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-count="100">0</span><span class="plus">%</span>
+            <p>Compromiso</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" data-anim="fade-left">
+        <div class="code-card" id="codeCard">
+          <div class="code-head">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="file">arley.js</span>
+          </div>
+<pre class="code-body"><span class="c-key">const</span> <span class="c-var">developer</span> = {
+  <span class="c-prop">name</span>: <span class="c-str">'Arley Rozo'</span>,
+  <span class="c-prop">role</span>: <span class="c-str">'Web Developer'</span>,
+  <span class="c-prop">stack</span>: [<span class="c-str">'HTML'</span>, <span class="c-str">'CSS'</span>, <span class="c-str">'JS'</span>,
+           <span class="c-str">'Python'</span>, <span class="c-str">'Java'</span>, <span class="c-str">'SQL'</span>],
+  <span class="c-prop">passions</span>: [<span class="c-str">'UX'</span>, <span class="c-str">'Bases de datos'</span>],
+  <span class="c-prop">available</span>: <span class="c-bool">true</span>,
+};</pre>
+          <div class="code-glow"></div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#sobre-mi" class="scroll-indicator" aria-label="Bajar">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- Marquesina de tecnologías -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span><i class="fa-brands fa-html5"></i> HTML5</span>
+      <span><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+      <span><i class="fa-brands fa-js"></i> JavaScript</span>
+      <span><i class="fa-brands fa-python"></i> Python</span>
+      <span><i class="fa-brands fa-java"></i> Java</span>
+      <span><i class="fa-solid fa-database"></i> MySQL</span>
+      <span><i class="fa-solid fa-server"></i> PostgreSQL</span>
+      <span><i class="fa-solid fa-table"></i> DBeaver</span>
+      <span><i class="fa-solid fa-toolbox"></i> Workbench</span>
+      <!-- duplicado para loop infinito -->
+      <span><i class="fa-brands fa-html5"></i> HTML5</span>
+      <span><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+      <span><i class="fa-brands fa-js"></i> JavaScript</span>
+      <span><i class="fa-brands fa-python"></i> Python</span>
+      <span><i class="fa-brands fa-java"></i> Java</span>
+      <span><i class="fa-solid fa-database"></i> MySQL</span>
+      <span><i class="fa-solid fa-server"></i> PostgreSQL</span>
+      <span><i class="fa-solid fa-table"></i> DBeaver</span>
+      <span><i class="fa-solid fa-toolbox"></i> Workbench</span>
+    </div>
+  </div>
+
+  <!-- ============ SOBRE MÍ ============ -->
+  <section class="section" id="sobre-mi">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag reveal" data-anim="fade-down">Sobre mí</span>
+        <h2 class="section-title reveal" data-anim="fade-up">
+          Construyo experiencias web <span class="gradient-text">con propósito</span>
+        </h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal" data-anim="fade-right">
+          <p>
+            Soy desarrollador web con un enfoque claro: combinar diseño limpio,
+            código mantenible y rendimiento real. Disfruto convirtiendo ideas en
+            interfaces funcionales que la gente quiera usar.
+          </p>
+          <p>
+            Trabajo de cerca con bases de datos, integraciones y lógica de
+            negocio. Me apasiona aprender y siempre busco aplicar buenas
+            prácticas para entregar proyectos sólidos y escalables.
+          </p>
+
+          <ul class="about-tags">
+            <li><i class="fa-solid fa-check"></i> Frontend moderno</li>
+            <li><i class="fa-solid fa-check"></i> Diseño responsivo</li>
+            <li><i class="fa-solid fa-check"></i> Bases de datos relacionales</li>
+            <li><i class="fa-solid fa-check"></i> Código limpio y semántico</li>
+          </ul>
+        </div>
+
+        <div class="about-card glow-card reveal" data-anim="fade-left">
+          <div class="ac-row">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <div>
+              <h4>Formación continua</h4>
+              <p>Siempre aprendiendo nuevas tecnologías y patrones.</p>
+            </div>
+          </div>
+          <div class="ac-row">
+            <i class="fa-solid fa-database"></i>
+            <div>
+              <h4>Datos & Backend</h4>
+              <p>PostgreSQL, MySQL, DBeaver y Workbench.</p>
+            </div>
+          </div>
+          <div class="ac-row">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <div>
+              <h4>Soporte técnico</h4>
+              <p>Mantenimiento y diagnóstico de equipos.</p>
+            </div>
+          </div>
+          <div class="ac-row">
+            <i class="fa-solid fa-bolt"></i>
+            <div>
+              <h4>Compromiso real</h4>
+              <p>Entregas con calidad y a tiempo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROYECTOS ============ -->
+  <section class="section section-alt" id="proyectos">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag reveal" data-anim="fade-down">Proyectos</span>
+        <h2 class="section-title reveal" data-anim="fade-up">
+          Trabajos <span class="gradient-text">seleccionados</span>
+        </h2>
+        <p class="section-sub reveal" data-anim="fade-up" data-delay="100">
+          Una muestra de proyectos donde he aplicado mis habilidades.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card tilt reveal" data-anim="fade-up">
+          <div class="project-thumb">
+            <div class="thumb-art thumb-watch">
+              <img src="/images/Lumen.png" alt="Lumen" />
+            </div>
+            <div class="project-overlay">
+              <a href="https://lumen-store.onrender.com" target="_blank" rel="noopener" class="ov-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://github.com/Arleyrozo27" target="_blank" rel="noopener" class="ov-btn"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span>HTML</span><span>CSS</span>
+            </div>
+            <h3>Tienda de Ropa</h3>
+            <p>
+              E-commerce visual de ropa construido con HTML y CSS puros,
+              enfocado en una experiencia de navegación elegante y minimalista.
+            </p>
+            <a href="https://github.com/Arleyrozo27" target="_blank" rel="noopener" class="project-link">
+              Ver proyecto <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card tilt reveal" data-anim="fade-up" data-delay="150">
+          <div class="project-thumb">
+            <div class="thumb-art thumb-movie">
+              <img src="/images/P.Mental.png" alt="Película Mental" />
+            </div>
+            <div class="project-overlay">
+              <a href="https://pelicula-mental-hzh8.onrender.com" target="_blank" rel="noopener" class="ov-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://github.com/Arleyrozo27" target="_blank" rel="noopener" class="ov-btn"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <h3>Película Mental</h3>
+            <p>
+              Generador de videos motivacionales que combina texto, imágenes y
+              audio para crear contenido inspirador de forma automática.
+            </p>
+            <a href="https://github.com/Arleyrozo27" target="_blank" rel="noopener" class="project-link">
+              Ver proyecto <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card tilt reveal" data-anim="fade-up" data-delay="100">
+          <div class="project-thumb">
+            <div class="thumb-art thumb-system">
+              <img src="/images/NeyLu.png" alt="NeyLu" />
+            </div>
+            <div class="project-overlay">
+              <a href="https://neylu.netlify.app" target="_blank" rel="noopener" class="ov-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://github.com/Arleyrozo27" target="_blank" rel="noopener" class="ov-btn"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <span class="project-badge">En Proceso</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span>HTML</span><span>CSS</span>
+            </div>
+            <h3>Catalogo NeyLú</h3>
+            <p>
+              Sistema de gestión de ventas que facilita la administración de productos, seguimiento de ingresos y organización del catálogo, mejorando la eficiencia y el control del negocio.
+            </p>
+            <a href="https://github.com/Arleyrozo27" target="_blank" rel="noopener" class="project-link">
+              Ver proyecto <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card tilt reveal" data-anim="fade-up" data-delay="200">
+          <div class="project-thumb">
+            <div class="thumb-art thumb-api">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/Arleyrozo27" target="_blank" rel="noopener" class="ov-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://github.com/Arleyrozo27" target="_blank" rel="noopener" class="ov-btn"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <span class="project-badge">Próximamente</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span>Python</span><span>PostgreSQL</span>
+            </div>
+            <h3>API REST</h3>
+            <p>
+              Servicio web seguro y escalable con endpoints documentados,
+              autenticación y conexión a base de datos en la nube.
+            </p>
+            <a href="https://github.com/Arleyrozo27" target="_blank" rel="noopener" class="project-link">
+              Ver proyecto <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="projects-cta reveal" data-anim="fade-up" data-delay="200">
+        <p class="projects-cta-text">¿Quieres ver más? Revisa todos mis proyectos en mi GitHub.</p>
+        <a href="https://github.com/Arleyrozo27" target="_blank" rel="noopener" class="btn btn-primary magnetic">
+          <i class="fa-brands fa-github"></i> Ver todos en GitHub
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HABILIDADES ============ -->
+  <section class="section" id="habilidades">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag reveal" data-anim="fade-down">Habilidades</span>
+        <h2 class="section-title reveal" data-anim="fade-up">
+          Tecnologías que <span class="gradient-text">domino</span>
+        </h2>
+      </div>
+
+      <div class="skills-wrap">
+        <div class="skills-bars reveal" data-anim="fade-right">
+          <div class="skill">
+            <div class="skill-info">
+              <span><i class="fa-brands fa-html5"></i> HTML5</span>
+              <span>90 %</span>
+            </div>
+            <div class="bar"><div class="fill" data-width="90"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-info">
+              <span><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+              <span>80 %</span>
+            </div>
+            <div class="bar"><div class="fill" data-width="80"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-info">
+              <span><i class="fa-brands fa-js"></i> JavaScript</span>
+              <span>70 %</span>
+            </div>
+            <div class="bar"><div class="fill" data-width="70"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-info">
+              <span><i class="fa-brands fa-python"></i> Python</span>
+              <span>80 %</span>
+            </div>
+            <div class="bar"><div class="fill" data-width="80"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-info">
+              <span><i class="fa-solid fa-database"></i> MySQL / PostgreSQL</span>
+              <span>70 %</span>
+            </div>
+            <div class="bar"><div class="fill" data-width="70"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-info">
+              <span><i class="fa-brands fa-java"></i> Java</span>
+              <span>50 %</span>
+            </div>
+            <div class="bar"><div class="fill" data-width="50"></div></div>
+          </div>
+        </div>
+
+        <div class="skills-icons reveal" data-anim="fade-left">
+          <div class="ico-card"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
+          <div class="ico-card"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
+          <div class="ico-card"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+          <div class="ico-card"><i class="fa-brands fa-python"></i><span>Python</span></div>
+          <div class="ico-card"><i class="fa-brands fa-java"></i><span>Java</span></div>
+          <div class="ico-card"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+          <div class="ico-card"><i class="fa-solid fa-server"></i><span>PostgreSQL</span></div>
+          <div class="ico-card"><i class="fa-solid fa-table"></i><span>DBeaver</span></div>
+          <div class="ico-card"><i class="fa-solid fa-toolbox"></i><span>Workbench</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCIA ============ -->
+  <section class="section section-alt" id="experiencia">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag reveal" data-anim="fade-down">Experiencia</span>
+        <h2 class="section-title reveal" data-anim="fade-up">
+          Mi <span class="gradient-text">recorrido</span>
+        </h2>
+      </div>
+
+      <div class="timeline">
+        <div class="t-item reveal" data-anim="fade-up">
+          <div class="t-dot"></div>
+          <div class="t-card glow-card">
+            <div class="t-head">
+              <h3>Manejo de bases de datos</h3>
+              <span class="t-tag">Backend / Datos</span>
+            </div>
+            <p>
+              Diseño y consulta de bases de datos relacionales con MySQL y
+              PostgreSQL, usando herramientas como DBeaver y MySQL Workbench
+              para modelar, optimizar y mantener la información.
+            </p>
+          </div>
+        </div>
+
+        <div class="t-item reveal" data-anim="fade-up" data-delay="100">
+          <div class="t-dot"></div>
+          <div class="t-card glow-card">
+            <div class="t-head">
+              <h3>Desarrollo web con conexión a BD</h3>
+              <span class="t-tag">Fullstack</span>
+            </div>
+            <p>
+              Construcción de sitios y aplicaciones web que se integran con
+              bases de datos para gestionar usuarios, productos e información
+              dinámica de manera segura y eficiente.
+            </p>
+          </div>
+        </div>
+
+        <div class="t-item reveal" data-anim="fade-up" data-delay="200">
+          <div class="t-dot"></div>
+          <div class="t-card glow-card">
+            <div class="t-head">
+              <h3>Mantenimiento de computadores</h3>
+              <span class="t-tag">Soporte</span>
+            </div>
+            <p>
+              Diagnóstico, reparación y mantenimiento preventivo de equipos,
+              aplicando buenas prácticas para optimizar el rendimiento y
+              prolongar la vida útil del hardware.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="section" id="contacto">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag reveal" data-anim="fade-down">Contacto</span>
+        <h2 class="section-title reveal" data-anim="fade-up">
+          ¿Tienes una idea? <span class="gradient-text">Hablemos</span>
+        </h2>
+        <p class="section-sub reveal" data-anim="fade-up" data-delay="100">
+          Cuéntame sobre tu proyecto y te responderé pronto.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info glow-card reveal" data-anim="fade-right">
+          <div class="ci-row">
+            <i class="fa-regular fa-envelope"></i>
+            <div>
+              <h4>Correo</h4>
+              <p>arleyrodriguez280@gmail.com</p>
+            </div>
+          </div>
+          <div class="ci-row">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h4>Ubicación</h4>
+              <p>Colombia · Remoto disponible</p>
+            </div>
+          </div>
+          <div class="ci-row">
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <h4>Disponibilidad</h4>
+              <p>Lunes a viernes</p>
+            </div>
+          </div>
+
+          <div class="socials">
+            <a href="https://github.com/Arleyrozo27" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" data-anim="fade-left" novalidate>
+          <div class="field">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" />
+            <small class="error" data-for="name"></small>
+          </div>
+
+          <div class="field">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" />
+            <small class="error" data-for="email"></small>
+          </div>
+
+          <div class="field">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu proyecto..."></textarea>
+            <small class="error" data-for="message"></small>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block magnetic">
+            <i class="fa-regular fa-paper-plane"></i> Enviar mensaje
+          </button>
+
+          <div class="form-success" id="formSuccess">
+            <i class="fa-solid fa-circle-check"></i>
+            ¡Mensaje enviado! Gracias por escribir.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Arley Rozo · Hecho con <i class="fa-solid fa-heart heart"></i> y código</p>
+      <a href="#inicio" class="back-top" aria-label="Volver arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
