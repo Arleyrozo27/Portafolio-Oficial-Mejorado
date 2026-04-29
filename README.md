@@ -38,7 +38,7 @@ Este proyecto muestra mis habilidades, proyectos y experiencia en desarrollo web
 
 ## 📂 Estructura del proyecto
 
----
+
 
 📁 Portafolio-Oficial-Mejorado
 
@@ -60,10 +60,14 @@ Este proyecto muestra mis habilidades, proyectos y experiencia en desarrollo web
 ## 🚀 Cómo usar este proyecto
 
 1. Clona el repositorio:
-   
+
+---
+
 bash
 
 git clone https://github.com/tu-usuario/Portafolio-Oficial-Mejorado.git
+
+---
 
 Abre el archivo:
 
